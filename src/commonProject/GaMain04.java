@@ -1,10 +1,12 @@
 package commonProject;
 
-public class GaMain {
+public class GaMain04 {
 	public static void main(String[] args) {
-		Ga01 tv= new Ga01();
-		tv.display();
+		Ga04 air = new Ga04();
+		air.display();
+		
+		
 	}
-
 	
+
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class a_온도{
 	private int num, Up, Down, system, end, sum;
-	public a_제습(int num, int Up, int Down, int system, int end, int sum) {
+	public a_온도(int num, int Up, int Down, int system, int end, int sum) {
 		this.num = num;
 		this.Up = Up;
 		this.Down = Down;

@@ -106,8 +106,10 @@ public class Ga01 {
 			if(son != null)
 				if(son.equals("up")) {
 					System.out.println("sound up : "+ ++i);
+					//dto.setSound("up");
 				}else if(son.equals("down")) {
 					System.out.println("sound down : "+ --i);
+					//dto.setSound("down");
 				}else {
 					System.out.println("버튼을 다시 눌러주세요");
 				}
@@ -125,9 +127,9 @@ public class Ga01 {
 			//dto.setChannel("down");
 			if(cha != null)
 				if(cha.equals(cha)) {
-					System.out.println(j);
+					//System.out.println(j);
 					System.out.println("channel : "+ ++j);
-					System.out.println(j);
+					//System.out.println(j);
 				}else if(cha.equals(cha)) {
 					System.out.println("channel : "+ --j);
 				}else {
