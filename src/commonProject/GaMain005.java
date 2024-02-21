@@ -1,11 +1,9 @@
 package commonProject;
 
-public class GaMain05 {
+public class GaMain005 {
 	public static void main(String[] args) {
-		GaInt05 g = new Ga05();
-		g.display();
+		Ga005 ga = new Ga005();
+		ga.display();
 	}
 
 }
-
-

@@ -2,7 +2,21 @@ package commonProject;
 
 import java.util.Scanner;
 
-class Tv001{
+class Tv001 implements GaInt001{
+	
+	public void powerOn(){
+		
+	}
+	public void Sound(){
+		
+	}
+	public void channel(){
+		
+	}
+	public void display(){
+		
+	}
+	
 	private String power, sound, channel;
 
 	public String getTv() {
@@ -28,12 +42,12 @@ class Tv001{
 	public void setChannel(String channel) {
 		this.channel = channel;
 	}
-	
+
 }
-public class Ga001 {
+public class Ga001 implements GaInt001 {
 	Scanner sc = new Scanner(System.in);
 	Tv001 T = new Tv001();
-	
+
 	public void powerOn() {
 		while(true) {
 			System.out.println("TV On/Off");
