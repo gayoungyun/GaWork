@@ -55,7 +55,6 @@ class remoteControl {
 					switch(num) {
 					case 1 :
 						if (cho<=999 && cho >=0) {
-							//rc.setNumset(cho);
 							rc.setNumset(cho);
 							System.out.println("번호를 입력해주세요");
 							cho = sc.nextInt();
@@ -64,17 +63,24 @@ class remoteControl {
 						}break;
 
 					case 2 :
-						System.out.println("한단계 올리고 내리기 숫자입력"+rc.getNumset());
-						num = sc.nextInt();
-						if(num>999) {
+						System.out.println("현재 번호 : "+cho+" 에서 up또는 down입력 ");
+						String numm = sc.next();
+						rc.setNumset(cho);
+						//rc.getNumset();
+						if(cho>999||cho<1) {
 							System.out.println("없는 번호입니다");
-							num = sc.nextInt();
-						}else if(num<1){
-							System.out.println("다시 입력해주세요");
+							cho = sc.nextInt();
+							if (rc.equals("up")) {
+								System.out.println( ++i+"로 변경");
+							}else if(rc.equals("down")) {
+								System.out.println(cho+ --i+"로 변경");
+							}
+						}else {
+							break;
 						}
 					case 3 :
 						System.out.println("나가기");
-						return;
+						break;
 					}
 				}
 			}
